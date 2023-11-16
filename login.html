@@ -4,14 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- FAVICON -->
   <link rel="shortcut icon" href="assets/img/logo-web.png" type="image/x-icon" />
-
-  <!-- REMIX ICONS -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <title>Sign in</title>
@@ -31,10 +25,12 @@
             placeholder="input your email">
           <div class="login__forgot">
             <label for="password" class="login__label">Password</label>
-            <a href="forgotPassword.html" class="login__fpass">Forgot password?</a>
           </div>
           <input id="password" name="password" type="password" autocomplete="current-password" required
             class="login__form" placeholder="input your password">
+          <div class="login__wrap_000fpass">
+            <a href="forgotPassword.html" class="login__fpass">Forgot password?</a>
+          </div>
           <button type="submit" class="login__submitButton">Sign in</button>
         </form>
 

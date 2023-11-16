@@ -3,15 +3,10 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  /* --first-color: hsl(var(--hue), 24%, 32%); */
-  /* --first-color-alt: hsl(var(--hue), 24%, 28%); */
-  /* --first-color-light: hsl(var(--hue), 24%, 66%); */
-  /* --first-color-lighten: hsl(var(--hue), 24%, 92%); */
   --first-color: #582f0e;
   --first-color-alt: #a66b37;
   --first-color-light: #ab6d35;
@@ -23,7 +18,6 @@
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -38,7 +32,6 @@
   --font-semi-bold: 600;
 
   /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
   --mb-1: 1rem;
@@ -69,7 +62,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid black; */
 }
 
 html {
@@ -88,7 +80,7 @@ body {
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.4s; /*For animation dark mode*/
+  transition: 0.4s;
 }
 
 button {
@@ -117,51 +109,8 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --first-color-dark: hsl(var(--hue), 8%, 20%);
-  --title-color: hsl(var(--hue), 4%, 95%);
-  --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: hsl(var(--hue), 8%, 12%);
-  --container-color: hsl(var(--hue), 8%, 16%);
-}
-
-/*========== Button Dark/Light ==========*/
-.change-theme {
-  color: var(--title-color);
-  font-size: 1.15rem;
-  cursor: pointer;
-}
-
-.nav__btns {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 1rem;
-}
-
-/*========== 
-Color changes in some parts of 
-the website, in dark theme 
-==========*/
-
-.dark-theme .steps__bg,
-.dark-theme .questions {
-  background-color: var(--first-color-dark);
-}
-
-.dark-theme .product__circle,
-.dark-theme .footer__subscribe {
-  background-color: var(--container-color);
-}
-
-.dark-theme .scroll-header {
-  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, 0.3);
-}
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  /* border: 1px solid black; */
   padding: 5.5rem 0 1rem;
 }
 
@@ -177,7 +126,6 @@ the website, in dark theme
 }
 
 .container {
-  /* border: 1px solid black; */
   max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -188,7 +136,7 @@ the website, in dark theme
 }
 
 .main {
-  overflow: hidden; /*For animation*/
+  overflow: hidden;
 }
 
 /*=============== HEADER ===============*/
@@ -199,7 +147,7 @@ the website, in dark theme
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: 0.4s; /*For animation dark mode*/
+  transition: 0.4s;
 }
 
 /*=============== NAV ===============*/
@@ -208,6 +156,16 @@ the website, in dark theme
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__btns__memu {
+  font-size: 1.5rem;
 }
 
 .nav__logo,
@@ -276,14 +234,12 @@ the website, in dark theme
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
-  /* font-weight: var(--font-medium); */
   background-color: var(--first-color);
   transition: 0.3s;
 }
 
 .btn__login:hover {
   color: white;
-  /* font-weight: var(--font-medium); */
   background-color: var(--first-color-alt);
 }
 
@@ -297,17 +253,14 @@ the website, in dark theme
   color: var(--first-color);
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
 .scroll-header {
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
 }
 
-/* Active link */
 .active-link {
   position: relative;
   color: var(--first-color);
@@ -325,7 +278,6 @@ the website, in dark theme
 
 /*=============== REGISTER ===============*/
 .register__container {
-  /* background-color: var(--first-color-lighten); */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -335,10 +287,8 @@ the website, in dark theme
 
 .register__screen {
   display: block;
-  /* border: 1px solid grey; */
   padding: 2rem;
   border-radius: 1rem;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .register__logo {
@@ -363,16 +313,16 @@ the website, in dark theme
   color: black;
 }
 
-.register__forgot{
+.register__forgot {
   display: flex;
   justify-content: space-between;
 }
 
-.register__fpass{
+.register__fpass {
   color: var(--first-color);
 }
 
-.register__fpass:hover{
+.register__fpass:hover {
   color: var(--first-color-alt);
 }
 
@@ -385,7 +335,7 @@ the website, in dark theme
   margin: 0.2rem 0 2rem 0;
 }
 
-.register__submitButton{
+.register__submitButton {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -398,20 +348,20 @@ the website, in dark theme
   transition: 0.3s;
 }
 
-.register__submitButton:hover{
+.register__submitButton:hover {
   background-color: var(--first-color-alt);
 }
 
-.register__login{
+.register__login {
   margin-top: 1rem;
 }
 
-.register__signup{
+.register__signup {
   font-weight: var(--font-medium);
   color: var(--first-color);
 }
 
-.register__signup:hover{
+.register__signup:hover {
   font-weight: var(--font-medium);
   color: var(--first-color-alt);
 }
@@ -456,16 +406,12 @@ the website, in dark theme
   color: black;
 }
 
-.login__forgot{
+.login__forgot {
   display: flex;
   justify-content: space-between;
 }
 
-.login__fpass{
-  color: var(--first-color);
-}
-
-.login__fpass:hover{
+.login__fpass:hover {
   color: var(--first-color-alt);
 }
 
@@ -478,12 +424,22 @@ the website, in dark theme
   margin: 0.2rem 0 2rem 0;
 }
 
-.login__submitButton{
+.login__wrap_fpass {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.login__fpass {
+  color: var(--first-color);
+}
+
+.login__submitButton {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0.5rem;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--first-color);
   color: var(--body-color);
@@ -491,27 +447,26 @@ the website, in dark theme
   transition: 0.3s;
 }
 
-.login__submitButton:hover{
+.login__submitButton:hover {
   background-color: var(--first-color-alt);
 }
 
-.login__register{
+.login__register {
   margin-top: 1rem;
 }
 
-.login__signup{
+.login__signup {
   font-weight: var(--font-medium);
   color: var(--first-color);
 }
 
-.login__signup:hover{
+.login__signup:hover {
   font-weight: var(--font-medium);
   color: var(--first-color-alt);
 }
 
 /*=============== FORGOT PASSWORD ===============*/
 .forgot__container {
-  /* background-color: var(--first-color-lighten); */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -521,17 +476,14 @@ the website, in dark theme
 
 .forgot__screen {
   display: block;
-  /* border: 1px solid grey; */
   padding: 2rem;
   border-radius: 1rem;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .forgot__back {
   position: absolute;
   font-size: 2rem;
   color: var(--first-color);
-  /* margin-bottom: 5rem; */
 }
 
 .forgot__logo {
@@ -555,7 +507,6 @@ the website, in dark theme
   margin-bottom: 1rem;
 }
 
-
 .forgot__label {
   display: block;
   font-size: var(--font-medium);
@@ -571,7 +522,7 @@ the website, in dark theme
   margin: 0.2rem 0 2rem 0;
 }
 
-.forgot__submitButton{
+.forgot__submitButton {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -584,7 +535,7 @@ the website, in dark theme
   transition: 0.3s;
 }
 
-.forgot__submitButton:hover{
+.forgot__submitButton:hover {
   background-color: var(--first-color-alt);
 }
 
@@ -733,25 +684,24 @@ the website, in dark theme
   transform: translateY(-0.25rem);
 }
 
-/*=============== PRODUCTS ===============*/
-.product__description {
+/*=============== TYPE ===============*/
+.type__description {
   text-align: center;
 }
 
-.product__container {
+.type__container {
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
-  /* grid-template-columns: repeat(2, 1fr); */
   gap: 2.5rem 3rem;
 }
 
-.product__card {
+.type__card {
   display: grid;
   position: relative;
 }
 
-.product__img {
+.type__img {
   position: relative;
   width: 120px;
   justify-self: center;
@@ -759,18 +709,17 @@ the website, in dark theme
   transition: 0.3s;
 }
 
-.product__title,
-.product__price {
+.type__title {
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
-.product__title {
+.type__title {
   margin-bottom: 0.25rem;
 }
 
-.product__button {
+.type__button {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -781,11 +730,11 @@ the website, in dark theme
   font-size: 1.15rem;
 }
 
-.product__button:hover {
+.type__button:hover {
   background-color: var(--first-color-alt);
 }
 
-.product__circle {
+.type__circle {
   width: 90px;
   height: 90px;
   background-color: var(--first-color-lighten);
@@ -795,7 +744,7 @@ the website, in dark theme
   left: 5%;
 }
 
-.product__card:hover .product__img {
+.type__card:hover .type__img {
   transform: translateY(-0.5rem);
 }
 
@@ -876,98 +825,14 @@ the website, in dark theme
   transform: rotate(45deg);
 }
 
-/*=============== CONTACT ===============*/
-.contact__container {
-  row-gap: 3.5rem;
-}
-
-.contact__data {
-  display: grid;
-  row-gap: 2rem;
-}
-
-.contact__subtitle {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  color: var(--text-color);
-  margin-bottom: var(--mb-0-5);
-}
-
-.contact__description {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-
-.contact__icon {
-  font-size: 1.25rem;
-}
-
-.contact__inputs {
-  display: grid;
-  row-gap: 2rem;
-  margin-bottom: var(--mb-2-5);
-}
-
-.contact__content {
-  position: relative;
-  height: 3rem;
-  border-bottom: 1px solid var(--text-color-light);
-}
-
-.contact__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem 1rem 1rem 0;
-  background: none;
-
-  color: var(--text-color);
-
-  border: none;
-  outline: none;
-  z-index: 1;
-}
-
-.contact__label {
-  position: absolute;
-  top: 0.75rem;
-  width: 100%;
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-  transition: 0.3s;
-}
-
-.contact__area {
-  height: 7rem;
-}
-
-.contact__area textarea {
-  resize: none;
-}
-
-/*Input focus move up label*/
-.contact__input:focus + .contact__label {
-  top: -0.75rem;
-  left: 0;
-  font-size: var(--smaller-font-size);
-  z-index: 10;
-}
-
-/*Input focus sticky top label*/
-.contact__input:not(:placeholder-shown).contact__input:not(:focus)
-  + .contact__label {
-  top: -0.75rem;
-  font-size: var(--smaller-font-size);
-  z-index: 10;
+.location__title {
+  color: var(--first-color);
 }
 
 /*=============== FOOTER ===============*/
 .footer__container {
+  display: flex;
+  justify-content: space-around;
   row-gap: 3rem;
 }
 
@@ -993,16 +858,7 @@ the website, in dark theme
 }
 
 .footer__title {
-  font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
-}
-
-.footer__subscribe {
-  background-color: var(--first-color-lighten);
-  padding: 0.75rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0.5rem;
 }
 
 .footer__input {
@@ -1042,20 +898,103 @@ the website, in dark theme
   transform: translateY(-0.25rem);
 }
 
-.footer__cards {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-}
-.footer__card {
-  width: 35px;
-}
-
 .footer__copy {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
   margin: 5rem 0 1rem;
+}
+
+/*=============== TRASHMATE FORM ===============*/
+.trash__container {
+  /* background-color: var(--first-color-lighten); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trash__screen {
+  display: block;
+  /* border: 1px solid grey; */
+  padding: 2rem;
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.trash__back {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--first-color);
+  /* margin-bottom: 5rem; */
+}
+
+.trash__dropdown {
+  display: block;
+  background: transparent;
+  font-size: var(--font-semi-bold);
+  font-family: var(--body-font);
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(155, 154, 154);
+  padding: 0.7rem 1rem;
+  margin: 0.2rem 0 2rem 0;
+}
+
+.trash__title {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.trash__label {
+  display: block;
+  font-size: var(--font-medium);
+  color: black;
+}
+
+.trash__form {
+  display: block;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(155, 154, 154);
+  padding: 0.7rem 1rem;
+  margin: 0.2rem 0 2rem 0;
+}
+
+.trash__info {
+  display: grid;
+  width: 100%;
+  border-radius: 0.1rem;
+  border: 2px solid var(--first-color);
+  margin: 0.2rem 0 2rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: 5.5rem;
+  text-align: center;
+}
+
+.trash__info__content {
+  margin: 0.5rem;
+}
+
+.trash__submitButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.trash__submitButton:hover {
+  background-color: var(--first-color-alt);
 }
 
 /*=============== SCROLL UP ===============*/
@@ -1120,7 +1059,7 @@ the website, in dark theme
     padding: 1.5rem;
   }
 
-  .product__container {
+  .type__container {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
@@ -1132,17 +1071,13 @@ the website, in dark theme
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .product__description {
+  .type__description {
     padding: 0 4rem;
   }
-  .product__container {
+  .type__container {
     grid-template-columns: repeat(2, 170px);
     justify-content: center;
     column-gap: 5rem;
-  }
-
-  .footer__subscribe {
-    width: 400px;
   }
 }
 
@@ -1196,9 +1131,6 @@ the website, in dark theme
   .footer__container {
     column-gap: 3rem;
   }
-  .footer__subscribe {
-    width: initial;
-  }
 }
 
 /* For large devices */
@@ -1240,23 +1172,22 @@ the website, in dark theme
     font-size: var(--normal-font-size);
   }
 
-  .product__description {
+  .type__description {
     padding: 0 16rem;
   }
-  .product__container {
+  .type__container {
     padding: 4rem 0;
     grid-template-columns: repeat(3, 185px);
     gap: 4rem 6rem;
   }
-  .product__img {
+  .type__img {
     width: 160px;
   }
-  .product__circle {
+  .type__circle {
     width: 110px;
     height: 110px;
   }
-  .product__title,
-  .product__price {
+  .type__title {
     font-size: var(--normal-font-size);
   }
 

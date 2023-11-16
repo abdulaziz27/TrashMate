@@ -4,14 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/logo-web.png" type="image/x-icon">
-
-    <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>TrashMate</title>
@@ -24,7 +18,6 @@
             <a href="#" class="nav__logo">
                 Tr<i class="ri-recycle-fill nav__logo-icon"></i>shMate
             </a>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -34,29 +27,26 @@
                         <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#products" class="nav__link">Services</a>
+                        <a href="#steps" class="nav__link">How to</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#types" class="nav__link">Services</a>
                     </li>
                     <li class="nav__item">
                         <a href="#faqs" class="nav__link">FAQs</a>
                     </li>
-                    <!-- <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Us</a>
-                    </li> -->
+                    <li class="nav__item">
+                        <a href="#location" class="nav__link">Location</a>
+                    </li>
                 </ul>
-
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
             </div>
-
             <div class="nav__btns">
-                <!-- Theme change button -->
-                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
-
                 <a href="login.html " class="btn__login">Login</a>
-
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                    <i class="ri-menu-line nav__btns__memu"></i>
                 </div>
             </div>
         </nav>
@@ -66,16 +56,13 @@
         <!--==================== HOME ====================-->
         <section class="home" id="home">
             <div class="home__container container grid">
-                <!-- <img src="assets/img/home.png" alt="" class="home__img"> -->
                 <img src="assets/img/header-pic.png" alt="" class="home__img">
-
                 <div class="home__data">
                     <h1 class="home__title">
-                        <!-- Plants will make <br> your life better -->
                         Solusi Dalam Pengelolaan Sampah Anda Menjadi Lebih Mudah
                     </h1>
-                    <a href="#about" class="button button--flex">
-                        Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                    <a href="trashMate.html" class="button button--flex">
+                        Buang Sampah <i class="ri-arrow-right-down-line button__icon"></i>
                     </a>
                 </div>
             </div>
@@ -85,12 +72,8 @@
         <section class="about section container" id="about">
             <div class="about__container grid">
                 <img src="assets/img/about-pic.png" alt="" class="about__img">
-
                 <div class="about__data">
-                    <h2 class="section__title about__title">
-                        About
-                    </h2>
-
+                    <h2 class="section__title about__title">About</h2>
                     <p class="about__description">
                         Trashmate merupakan sebuah solusi inovatif di bidang pengelolaan
                         sampah yang tidak hanya fokus pada upaya pelestarian lingkungan,
@@ -98,40 +81,16 @@
                         sumber pendapatan. Sistem ini dirancang untuk merangsang partisipasi
                         masyarakat dalam praktik daur ulang dengan memberikan insentif keuangan.
                     </p>
-
-                    <!-- <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            We always deliver on time.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            We give you guides to protect and care for your plants.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            We always come over for a check-up after sale.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            100% money back guaranteed.
-                        </p>
-                    </div> -->
-
-                    <!-- <a href="#" class="button--link button--flex">
-                        Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a> -->
                 </div>
             </div>
         </section>
 
         <!--==================== STEPS ====================-->
-        <section class="steps section container">
+        <section class="steps section container" id="steps">
             <div class="steps__bg">
                 <h2 class="section__title-center steps__title">
                     Cara Menukarkan Sampah
                 </h2>
-
                 <div class="steps__container grid">
                     <div class="steps__card">
                         <div class="steps__card-number">01</div>
@@ -140,7 +99,6 @@
                             Pilih dan kumpulkan sampah menjadi satu plastik <br> sesuai jenis sampah
                         </p>
                     </div>
-
                     <div class="steps__card">
                         <div class="steps__card-number">02</div>
                         <h3 class="steps__card-title">Tentukan Lokasi</h3>
@@ -148,7 +106,6 @@
                             Tentukan lokasi terdekat untuk pembuangan
                         </p>
                     </div>
-
                     <div class="steps__card">
                         <div class="steps__card-number">03</div>
                         <h3 class="steps__card-title">Timbang Sampah</h3>
@@ -157,7 +114,6 @@
                             transfer ke e-wallet mu
                         </p>
                     </div>
-
                     <div class="steps__card">
                         <div class="steps__card-number">04</div>
                         <h3 class="steps__card-title">Sampah Dikelola</h3>
@@ -169,33 +125,26 @@
             </div>
         </section>
 
-        <!--==================== PRODUCTS ====================-->
-        <section class="product section container" id="products">
+        <!--==================== TYPE ====================-->
+        <section class="type section container" id="types">
             <h2 class="section__title-center">
                 Macam-macam sampah <br> yang dapat ditukarkan
             </h2>
+            <p class="type__description">TrashMate menyediakan daur ulang sampah dengan bentuk organic dan anorganic</p>
+            <div class="type__container">
+                <article class="type__card">
+                    <div class="type__circle"></div>
 
-            <p class="product__description">
-                TrashMate menyediakan daur ulang sampah dengan bentuk organic dan anorganic
-            </p>
+                    <img src="assets/img/organic-trash-pic.png" alt="" class="type__img">
 
-            <div class="product__container">
-                <article class="product__card">
-                    <div class="product__circle"></div>
-
-                    <img src="assets/img/organic-trash-pic.png" alt="" class="product__img">
-
-                    <h3 class="product__title">Sampah Organik</h3>
-                    <!-- <span class="product__price">$19.99</span> -->
+                    <h3 class="type__title">Sampah Organik</h3>
                 </article>
+                <article class="type__card">
+                    <div class="type__circle"></div>
 
-                <article class="product__card">
-                    <div class="product__circle"></div>
+                    <img src="assets/img/non organic-trash-pic.png" alt="" class="type__img">
 
-                    <img src="assets/img/non organic-trash-pic.png" alt="" class="product__img">
-
-                    <h3 class="product__title">Sampah Non-Organik</h3>
-                    <!-- <span class="product__price">$11.99</span> -->
+                    <h3 class="type__title">Sampah Non-Organik</h3>
                 </article>
             </div>
         </section>
@@ -212,60 +161,62 @@
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                Dua Tiga tutup botol?
+                                Bagaimana cara menukarkan sampah?
                             </h3>
                         </header>
-
                         <div class="questions__content">
-                            <p class="questions__description">
-                                Palalu kotak yhaaa
-                            </p>
+                            <ol class="questions__description">
+                                <li>Pilih dan kumpulkan sampah menjadi satu plastik</li>
+                                <li>Tentukan lokasi terdekat untuk pembuangan</li>
+                                <li>Timbang berat sampah kemudian Menunggu persetujuan dari kami dan uang akan langsung
+                                    di transfer ke e-wallet mu</li>
+                                <li>Sampah yang telah sampai akan dikelola oleh tim TrashMate</li>
+                            </ol>
                         </div>
                     </div>
-
                     <div class="questions__item">
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                Es batu tiga ratus?
+                                Dimana lokasi terdekat penukaran sampah?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Huam huam cusss.
+                                Lokasi penukaran terletak di Jl. Kyai Moch. Syafei, Kebondalem, Purwokerto Jawa Tengah
+                                53114
                             </p>
                         </div>
                     </div>
-
                     <div class="questions__item">
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                Coba ngaca
+                                Jenis sampah apa saja yang dapat ditukarkan?
                             </h3>
                         </header>
 
                         <div class="questions__content">
-                            <p class="questions__description">
-                                Muka lu di servis
-                            </p>
+                            <ol class="questions__description">
+                                <li>Sampah Organik</li>
+                                <li>Sampah Non-Organik</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
-
                 <div class="questions__group">
                     <div class="questions__item">
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                Liat kaki lu
+                                Berapa berat minimal dan maksimal?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                yhaaa item yaa
+                                Untuk berat minimal sampah seberat 1 kg dan maksimal sampah seberat 10 kg
                             </p>
                         </div>
                     </div>
@@ -274,13 +225,13 @@
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                kandang sapi kandang kuda
+                                Penerimaan uang via apa?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                dadadadada
+                                Untuk penerimaan uang akan melalui dana
                             </p>
                         </div>
                     </div>
@@ -289,13 +240,14 @@
                         <header class="questions__header">
                             <i class="ri-add-line questions__icon"></i>
                             <h3 class="questions__item-title">
-                                kunci yang di bawah kasur
+                                Bagaimana cara menghubungi team trashmate?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                kutuu
+                                Bisa dengan melalui email trashmate@gmail.com atau juga menghubungi nomor +62 852 1155
+                                3430
                             </p>
                         </div>
                     </div>
@@ -303,70 +255,15 @@
             </div>
         </section>
 
-        <!--==================== CONTACT ====================-->
-        <!-- <section class="contact section container" id="contact">
-            <div class="contact__container grid">
-                <div class="contact__box">
-                    <h2 class="section__title">
-                        Reach out to us today <br> via any of the given <br> information
-                    </h2>
-
-                    <div class="contact__data">
-                        <div class="contact__information">
-                            <h3 class="contact__subtitle">Call us for instant support</h3>
-                            <span class="contact__description">
-                                <i class="ri-phone-line contact__icon"></i>
-                                +999 888 777
-                            </span>
-                        </div>
-
-                        <div class="contact__information">
-                            <h3 class="contact__subtitle">Write us by mail</h3>
-                            <span class="contact__description">
-                                <i class="ri-mail-line contact__icon"></i>
-                                user@email.com
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="" class="contact__form">
-                    <div class="contact__inputs">
-                        <div class="contact__content">
-                            <input type="email" placeholder=" " class="contact__input">
-                            <label for="" class="contact__label">Email</label>
-                        </div>
-
-                        <div class="contact__content">
-                            <input type="text" placeholder=" " class="contact__input">
-                            <label for="" class="contact__label">Subject</label>
-                        </div>
-
-                        <div class="contact__content contact__area">
-                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
-                            <label for="" class="contact__label">Message</label>
-                        </div>
-                    </div>
-
-                    <button class="button button--flex">
-                        Send Message
-                        <i class="ri-arrow-right-up-line button__icon"></i>
-                    </button>
-                </form>
+        <!--==================== LOCATION ====================-->
+        <section class="location section container" id="location">
+            <h2 class="section__title-center location__title"> Our Location</h2>
+            <div class="location__maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.27319102858993!2d109.24192828299778!3d-7.424124261866841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f5c6aae8fef%3A0x54c0be474e387ad7!2sGRHP%20KOST!5e0!3m2!1sen!2sid!4v1699989027954!5m2!1sen!2sid"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section> -->
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section container" id="about">
-            <div class="about__container grid">
-                <div class="about__data">
-                    <h1 style="display: flex;justify-content: center;border: 1px solid black;">Our Location</h1>
-                    <!-- <img src="assets/img/about-pic.png" alt="" class="about__img"> -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.27319102858993!2d109.24192828299778!3d-7.424124261866841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f5c6aae8fef%3A0x54c0be474e387ad7!2sGRHP%20KOST!5e0!3m2!1sen!2sid!4v1699989027954!5m2!1sen!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
         </section>
     </main>
 
@@ -375,76 +272,40 @@
         <div class="footer__container container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <i class="ri-leaf-line footer__logo-icon"></i> Plantex
+                    Tr<i class="ri-recycle-fill nav__logo-icon"></i>shMate
                 </a>
 
-                <h3 class="footer__title">
-                    Subscribe to our newsletter <br> to stay update
-                </h3>
+                <h4 class="footer__title">
+                    Mengubah sampah menjadi masa depan yang berkelanjutan
+                </h4>
 
-                <div class="footer__subscribe">
-                    <input type="email" placeholder="Enter your email" class="footer__input">
-
-                    <button class="button button--flex footer__button">
-                        Subscribe
-                        <i class="ri-arrow-right-up-line button__icon"></i>
-                    </button>
-                </div>
+                <a class="button button--flex footer__button" href="trashMate.html">
+                    Buang Sampah
+                    <i class="ri-arrow-right-up-line button__icon"></i>
+                </a>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Our Address</h3>
 
                 <ul class="footer__data">
-                    <li class="footer__information">1234 - Peru</li>
-                    <li class="footer__information">La Libertad - 43210</li>
-                    <li class="footer__information">123-456-789</li>
-                </ul>
+                    <li class="footer__information">Jl. Kelurahan 2, Arcawinangun, Kab. Banyumas, Purwokerto, Jawa
+                        Tengah</li>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Contact Us</h3>
 
                 <ul class="footer__data">
-                    <li class="footer__information">+999 888 777</li>
-
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" class="footer__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/trashmate/" class="footer__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://twitter.com/" class="footer__social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                    </div>
+                    <li class="footer__information">+62 852 1155 3430</li>
+                    <li class="footer__information">trashmate@gmail.com</li>
                 </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    We accept all credit cards
-                </h3>
-
-                <div class="footer__cards">
-                    <img src="assets/img/card1.png" alt="" class="footer__card">
-                    <img src="assets/img/card2.png" alt="" class="footer__card">
-                    <img src="assets/img/card3.png" alt="" class="footer__card">
-                    <img src="assets/img/card4.png" alt="" class="footer__card">
-                </div>
             </div>
         </div>
 
-        <p class="footer__copy">&#169; TrashMate. All rigths reserved</p>
+        <p class="footer__copy">&#169; TrashMate, Gerabge to Coins</p>
     </footer>
 
     <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-fill scrollup__icon"></i>
-    </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
+    <a href="#home" class="scrollup" id="scroll-up"><i class="ri-arrow-up-fill scrollup__icon"></i></a>
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
